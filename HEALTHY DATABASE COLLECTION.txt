@@ -1,0 +1,52 @@
+Users
+- userId (string)
+- email (string)
+- password (string)
+- createdAt (timestamp)
+
+Profiles
+- userId (string)
+- name (string)
+- age (number)
+- height (number)
+- weight (number)
+- profilePhotoUrl (string)
+
+WorkoutPlans
+- planId (string)
+- userId (string)
+- dateScheduled (timestamp)
+- title (string)
+- exercises (array of maps)
+  - name (string)
+  - sets (number)
+  - reps (number)
+  - weight (number)
+
+SavedWorkouts
+- workoutId (string)
+- userId (string)
+- date (timestamp)
+- exercises (array of maps)
+  - name (string)
+  - sets (number)
+  - reps (number)
+  - weight (number)
+
+WorkoutHistory
+- userId (string)
+- workouts (array of maps)
+  - workoutId (string)
+  - date (timestamp)
+  - summary (string)
+
+WorkoutStats
+- userId (string)
+- month (string) e.g. "May 2025"
+- totalWorkouts (number)
+- totalWeightLifted (number)
+- mostFrequentExercise (string)
+- personalRecords (map)
+  - Bench Press: 100
+  - Squats: 120
+  - Deadlift: 150
